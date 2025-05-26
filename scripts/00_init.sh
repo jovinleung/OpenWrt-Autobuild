@@ -13,7 +13,7 @@ __get_other-repos() {
 
 __patch_fullconenat() {
     # patch kernel
-    cp -f ./lede/target/linux/generic/hack-6.6/952-add-net-conntrack-events-support-multiple-registrant.patch ./openwrt/target/linux/generic/hack-6.6/
+    cp -f ./lede/target/linux/generic/hack-6.12/952-add-net-conntrack-events-support-multiple-registrant.patch ./openwrt/target/linux/generic/hack-6.12/
     # disable KERNEL_WERROR
     sed -i 's,imply KERNEL_WERROR,#imply KERNEL_WERROR,g' ./openwrt/toolchain/gcc/Config.version
     # fullconenat-nft
